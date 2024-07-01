@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: linear-gradient(to bottom, #374151 0%, #111827 100%);
 }
@@ -52,7 +56,7 @@ body {
   height: var(--height-bar);
   width: 100%;
   border-radius: 0.5rem;
-  background-color: black;
+  background-color: #ffff;
 }
 
 .bar--1 {
@@ -115,6 +119,21 @@ body {
 /* Custom Gradient */
 body {
   background-image: linear-gradient(to bottom, #374151 0%, #111827 100%);
+}
+@media (max-width: 1110px) {
+  .custom-about-styles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1110px) {
+  .custom-about-image {
+    width: 50%;
+  }
+  .custom-about-info {
+    width: 50%;
+  }
 }
 /* styles.css */
 .embla {

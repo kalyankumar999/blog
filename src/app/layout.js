@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Oswald, MonteCarlo } from 'next/font/google';
 import local from 'next/font/local';
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const satoshi = local({
@@ -33,7 +34,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${oswald.variable} ${monteCarlo.variable} ${satoshi.variable} bg-white`}>{children}</body>
+      <body
+        className={`${oswald.variable} ${monteCarlo.variable} ${satoshi.variable} bg-white`}
+      >
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

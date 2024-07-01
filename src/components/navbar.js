@@ -7,7 +7,7 @@ import Link from 'next/link';
 /**
  * Navbar component for rendering the main navigation bar.
  *
- * @returns {JSX.Element} The rendered navigation bar.
+ * @returns {JSX.Element} The rendered navigation bar
  */
 
 const Navbar = ()=> {

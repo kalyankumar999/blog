@@ -6,8 +6,7 @@ import {
   ShareIcon,
 } from "@/assets/social-icons";
 import { Phone, Mail } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
-import Image from "next/image";
+
 
 const ContactSection = () => {
   return (
@@ -27,8 +26,13 @@ const ContactSection = () => {
             nibh, nec fermentum velit erat vel nisi. Mauris vitae semper lacus.
           </p>
           <div className="flex gap-2">
+            
             <Phone />
-            <b className="cursor-pointer hover:underline">+91 6304506343</b>
+             <a
+                href={`tel:${'+91 6304506343'}`}
+                className="hover:text-primary-600 "
+              > <b className="cursor-pointer hover:underline">+91 6304506343</b></a>
+           
           </div>
           <div className="flex gap-2 mt-4">
             <Mail />

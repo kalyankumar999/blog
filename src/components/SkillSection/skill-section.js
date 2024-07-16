@@ -1,64 +1,12 @@
 'use client'
-import Image from "next/image";
 import React from "react";
-import HtmlLogo from "../../../public/logos/html.svg";
-import CssLogo from "../../../public/logos/css.svg";
-import GraphqlLogo from "../../../public/logos/graphql.svg";
-import JavascriptLogo from "../../../public/logos/javascript.svg";
-import TypescriptLogo from "../../../public/logos/typescript.svg";
-import TailwindcssLogo from "../../../public/logos/tailwind-css-2.svg";
-import NextjsLogo from "../../../public/logos/next-js.svg";
+
 import EmblaCarousel from "../Carousel/carousel";
+import {skillData} from './data'
 
 const SkillSection = () => {
   const OPTIONS = { loop: true }
-  const skillData = [
-    {
-      url: HtmlLogo,
-      text: "HTML-5",
-    },
-
-    {
-      url: CssLogo,
-      text: "CSS-3",
-    },
-    {
-      url: NextjsLogo,
-      text: "Nextjs",
-    },
-    {
-      url: TailwindcssLogo,
-      text: "Tailwindcss",
-    },
-    {
-      url: JavascriptLogo,
-      text: "Javascript",
-    },
-    {
-      url: TypescriptLogo,
-      text: "Typescript",
-    },
-    {
-      url: GraphqlLogo,
-      text: "Graphql",
-    },
-    {
-      url: HtmlLogo,
-      text: "HTML-5",
-    },
-    {
-      url: TypescriptLogo,
-      text: "Typescript",
-    },
-    {
-      url: GraphqlLogo,
-      text: "Graphql",
-    },
-    {
-      url: HtmlLogo,
-      text: "HTML-5",
-    },
-  ];
+ 
   return (
     <section
       id="skills"
@@ -69,12 +17,10 @@ const SkillSection = () => {
       </h3>
       
       <p className="font-satoshi text-white md:text-lg text-md mb-3 md:mb-6 max-w-[800px]">
-        I'm Kalyan Kumar Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Sed euismod, nunc ac bibendum ullamcorper, sapien diam cursus
-        nibh, nec fermentum velit erat vel nisi. Mauris vitae semper lacus.
+      {skillData.description}
       </p>
-      <div className=' text-black'>
-            <EmblaCarousel skillData={skillData} options={OPTIONS} />
+      <div className=' text-black '>
+            <EmblaCarousel skillData={skillData.skills} options={OPTIONS} />
         </div>
       {/* <div className="flex flex-wrap md:gap-40 gap-10 justify-between">
         {skillData.map((item) => (

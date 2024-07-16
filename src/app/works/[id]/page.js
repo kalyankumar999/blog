@@ -1,28 +1,41 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import profileImg from "@/assets/profile.jpg";
+import projectImg from "../../../assets/project.webp";
 
-const page = () => {
+import { projectData } from "../data";
+import { toast } from "sonner";
+
+const page = ({ params: { id } }) => {
+  const project = projectData.find((proj) => proj.id === parseInt(id));
+
+  console.log("kalyan", project);
   return (
-    <div className="md:mx-[120px] px-[16px] md:px-0 md:pt-4 pt-[30px] pb-10 text-white">
-      <div className="flex md:flex-nowrap flex-wrap md:gap-10">
+    <div className="md:mx-[120px]  px-[16px] md:px-0 md:pt-4 pt-[30px] pb-10 text-white">
+      <div className="flex md:flex-nowrap flex-wrap md:gap-10 md:mb-5">
         <div>
           <h2 className="uppercase font-semibold text-center mb-4 font-oswald md:text-xl text-lg">
-            Project title
+            {project.title}
           </h2>
           <div className="relative group">
             <Image
-              src={profileImg}
+              src={projectImg}
               alt=""
-              className="w-[100%] rounded-lg object-cover md:min-w-[400px] md:min-h-[400px]"
+              className="w-[100%] rounded-lg object-cover md:max-w-[700px] md:min-h-[400px]"
             />
-            <a
+            <button
+              onClick={() => toast.info("Internal Application")}
+              className="absolute bottom-0 left-0 right-0 m-4 text-center rounded-full cursor-Buttonointer py-2 px-4 bg-white text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              Live Demo
+            </button>
+            {/* <Link
               href="URL_TO_LIVE_DEMO"
               target="_blank"
               className="absolute bottom-0 left-0 right-0 m-4 text-center py-2 px-4 bg-white text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
-              <p>Live Demo</p>
-            </a>
+              Live Demo
+            </Link> */}
           </div>
         </div>
         <div className="mt-10">
@@ -46,14 +59,9 @@ const page = () => {
             <h2 className="uppercase font-semibold font-oswald md:text-xl text-lg">
               Objectives
             </h2>
-            <p>
-              PRoject deals with recruitment and hiring process PRoject deals
-              with recruitment and hiring process PRoject deals with recruitment
-              and hiring process PRoject deals with recruitment and hiring
-              process
-            </p>
+            <p>{project.objectives}</p>
           </div>
-          <div className="mt-10">
+          <div className="my-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -74,17 +82,17 @@ const page = () => {
             <h2 className="uppercase font-oswald md:text-xl text-lg font-semibold">
               Technologies used
             </h2>
-            <ul className="font-satoshi md:text-lg text-md">
-              <li>Nextjs</li>
-              <li>Typescript</li>
-              <li>Tailwindcss</li>
+            <ul className=" list-disc list-inside font-satoshi md:text-lg text-md">
+              {project.technologies.map((item) => (
+                <li>{item}</li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
 
       <div className="flex gap-4 md:flex-nowrap flex-wrap">
-        <div className="my-6rounded-lg md:p-5 md:p-3">
+        <div className=" w-full rounded-lg md:p-5 md:p-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -104,14 +112,13 @@ const page = () => {
           <h2 className="uppercase font-semibold font-oswald md:text-xl text-lg">
             Summary
           </h2>
-          <ol className="mt-1 list-decimal list-inside font-Satoshi md:text-lg text-md bg-white text-black  font-md rounded-lg p-2 hover:shadow-white hover:shadow-md">
-            <li>Project deals with recruitment and hiring process</li>
-            <li>Project deals with recruitment and hiring process.</li>
-            <li>Project deals with recruitment and hiring process</li>
-          </ol>
+
+          <p className="mt-1  font-Satoshi md:text-lg text-md bg-white text-black max-h-[250px] overflow-scroll  font-md rounded-lg p-4 hover:shadow-white hover:shadow-md">
+            {project.summary}
+          </p>
         </div>
 
-        <div className="my-6rounded-lg md:p-5 md:p-3">
+        <div className=" w-full rounded-lg md:p-5 md:p-3">
           <svg
             fill="#FFFF"
             width="20px"
@@ -127,13 +134,13 @@ const page = () => {
           <h2 className="uppercase font-semibold font-oswald md:text-xl text-lg">
             Roles and Contributions
           </h2>
-          <ol className="mt-1 list-decimal list-inside font-Satoshi md:text-lg text-md bg-white text-black  font-md rounded-lg p-2 hover:shadow-white hover:shadow-md">
-            <li>Project deals with recruitment and hiring process</li>
-            <li>Project deals with recruitment and hiring process.</li>
-            <li>Project deals with recruitment and hiring process</li>
+          <ol className="mt-1 list-disc list-outside max-h-[250px] overflow-y-auto font-Satoshi md:text-lg text-md bg-white text-black font-md rounded-lg p-4 hover:shadow-white hover:shadow-md">
+            {project.contributions.map((item) => (
+              <li className="ml-5 pl-2">{item}</li>
+            ))}
           </ol>
         </div>
-        <div className="my-6rounded-lg md:p-5 md:p-3">
+        <div className=" w-full rounded-lg md:p-5 md:p-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -155,10 +162,10 @@ const page = () => {
           <h2 className="uppercase font-semibold font-oswald md:text-xl text-lg">
             Features
           </h2>
-          <ol className="mt-1 list-decimal list-inside font-Satoshi md:text-lg text-md bg-white text-black  font-md rounded-lg p-2 hover:shadow-white hover:shadow-md">
-            <li>Project deals with recruitment and hiring process</li>
-            <li>Project deals with recruitment and hiring process.</li>
-            <li>Project deals with recruitment and hiring process</li>
+          <ol className="mt-1 list-disc list-outside max-h-[250px] overflow-y-auto font-Satoshi md:text-lg text-md bg-white text-black font-md rounded-lg p-4 hover:shadow-white hover:shadow-md">
+            {project.features.map((item) => (
+              <li className="ml-5 pl-2">{item}</li>
+            ))}
           </ol>
         </div>
       </div>

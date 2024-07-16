@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import profileImg from "@/assets/profile.jpg";
+import profileImg from "../../assets/profile.jpg";
+import {aboutData} from './data'
+import Link from "next/link";
 
 const AboutSection = () => {
   return (
@@ -29,40 +31,39 @@ const AboutSection = () => {
               Hello everyone I'm
             </h2>
             <h1 className="uppercase font-oswald font-bold md:text-[40px] text-primarytext-700 mb-2  text-2xl">
-              Kalyan Kumar Avula
+              {aboutData.name}
             </h1>
             <h3 className="mb-4 md:mb-6 font-oswald text-lg md:text-[24px] font-semibold text-primarytext-400">
-              Software Web Developer
+             {aboutData.title}
             </h3>
             <p className="font-satoshi text-primarytext-600 md:text-lg text-md  mb-3 md:mb-6">
-              I'm Kalyan Kumar Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed euismod, nunc ac bibendum ullamcorper, sapien
-              diam cursus nibh, nec fermentum velit erat vel nisi. Mauris vitae
-              semper lacus.
+              {aboutData.description}
             </p>
 
             <p className=" my-1  text-primarytext-500 md:text-lg text-md ">
               <span className="font-semibold">Experince: </span>
-              1+ experince as a Developer
+              {aboutData.experience}
             </p>
             <p className=" my-1 md:my-2 md:text-lg text-md  text-primarytext-500">
               <span className="font-semibold">Hobbies: </span>
-              Photography, Coding, and Traveling
+              {aboutData.hobbies}
             </p>
           </div>
           <div className="flex flex-wrap md:flex-nowrap mt-4 justify-center gap-5 items-center bottom-0">
-            <button
-              type="button"
-              className="00 px-10 py-2 bg-gray-500 md:text-md text-sm font-santoshi transition ease-in-out hover:scale-105 text-white rounded-md"
-            >
-              Resume
-            </button>
-            <button
-              type="button"
-              className="00 px-10 py-2 md:text-md text-sm transition ease-in-out hover:scale-105 bg-gray-500 font-santoshi text-white rounded-md"
-            >
-              Contact
-            </button>
+           <button
+            type="button"
+            className="px-10 py-2 bg-gray-500 md:text-md text-sm font-santoshi text-white rounded-md transition-all duration-300 ease-in-out hover:bg-gray-600 hover:shadow-lg active:transform active:scale-95"
+          >
+            Resume
+          </button>
+            <Link href='#connect'>
+              <button
+            type="button"
+            className="px-10 py-2 md:text-md text-sm bg-gray-500 font-santoshi text-white rounded-md transition-all duration-300 ease-in-out hover:bg-gray-600 hover:shadow-lg active:transform active:scale-95"
+          >
+            Contact
+          </button>
+            </Link>
           </div>
         </div>
       </div>

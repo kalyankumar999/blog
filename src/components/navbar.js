@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import navLinks from "./navlinks";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { routes } from "@/constants/routes";
+import { routes } from "../constants/routes";
 
 /**
  * Navbar component for rendering the main navigation bar.
@@ -61,12 +61,12 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="sticky top-0 z-50 flex items-center justify-between px-[24px] font-oswald backdrop-blur-md md:h-[106px] md:pl-[120px] md:pr-[110px] text-white"
+      className="sticky top-0 z-50 flex items-center justify-between px-[24px] font-oswald  backdrop-blur-md md:h-[106px] md:pl-[120px] md:pr-[110px] text-white"
     >
       <Link href="/">
-        <div className="my-[13px] uppercase h-[36px] text-[24px] font-semibold text-secondary-500 md:my-[30px] md:h-[47px] md:w-[70px] md:text-[32px]">
+        <span className="my-[13px] uppercase h-[36px] text-[24px] font-semibold text-secondary-500 md:my-[30px] md:h-[47px] md:w-[70px] md:text-[32px]">
           Kalyan
-        </div>
+        </span>
       </Link>
 
       {pageUrl === routes.BASE && (

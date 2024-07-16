@@ -1,30 +1,31 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Oswald, MonteCarlo } from 'next/font/google';
-import local from 'next/font/local';
-import Navbar from "@/components/navbar";
+import { Oswald, MonteCarlo } from "next/font/google";
+import local from "next/font/local";
+import Navbar from "../components/navbar";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 const satoshi = local({
   src: [
     {
-      path: '../../public/fonts/Satoshi-Variable.ttf',
-      weight: '400',
+      path: "../../public/fonts/Satoshi-Variable.ttf",
+      weight: "400",
     },
   ],
-  variable: '--font-satoshi',
+  variable: "--font-satoshi",
 });
 
 const oswald = Oswald({
-  subsets: ['latin'],
-  variable: '--font-oswald',
-  weight: ['400', '500', '600'],
+  subsets: ["latin"],
+  variable: "--font-oswald",
+  weight: ["400", "500", "600"],
 });
 
 const monteCarlo = MonteCarlo({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-monteCarlo',
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-monteCarlo",
 });
 export const metadata = {
   title: "kalyan kumar",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${oswald.variable} ${monteCarlo.variable} ${satoshi.variable} bg-white`}
       >
+        <Toaster position="top-center" richColors />
         <Navbar />
         {children}
       </body>

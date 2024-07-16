@@ -21,7 +21,7 @@ const EmblaCarousel = ({ skillData, options }) => {
      <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {skillData?.map((item, index) => (
-            <div className="embla__slide bg-white p-4 rounded-2xl" key={index}>
+            <div className="embla__slide bg-white p-4 rounded-2xl flex flex-col " key={index}>
              <p className="text-center md:text-sm text-xs font-medium mb-1">{item.text}</p>
               <Image
                 src={item.url}

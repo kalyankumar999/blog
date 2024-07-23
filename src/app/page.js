@@ -10,6 +10,7 @@ import GallerySection from "../components/GallerySection/gallery";
 const HomePage = () => {
   return (
     <div>
+      
       <HeroSection />
       <AboutSection />
       <SkillSection />

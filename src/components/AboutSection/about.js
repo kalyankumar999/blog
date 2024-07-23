@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import profileImg from "../../assets/profile.jpg";
-import {aboutData} from './data'
+import { aboutData } from "./data";
 import Link from "next/link";
 
 const AboutSection = () => {
   return (
     <section
       id="about"
-      className="md:mx-[120px] px-[16px] md:px-0 md:pt-[110px] pt-[62px]"
+      className="md:mx-[120px] px-[16px] md:px-0 md:pt-[110px] pt-[62px] "
     >
       <h3 className="uppercase font-oswald font-semibold text-white text-lg md:mb-5 mb-3">
         About me
@@ -34,7 +34,7 @@ const AboutSection = () => {
               {aboutData.name}
             </h1>
             <h3 className="mb-4 md:mb-6 font-oswald text-lg md:text-[24px] font-semibold text-primarytext-400">
-             {aboutData.title}
+              {aboutData.title}
             </h3>
             <p className="font-satoshi text-primarytext-600 md:text-lg text-md  mb-3 md:mb-6">
               {aboutData.description}
@@ -50,19 +50,19 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="flex flex-wrap md:flex-nowrap mt-4 justify-center gap-5 items-center bottom-0">
-           <button
-            type="button"
-            className="px-10 py-2 bg-gray-500 md:text-md text-sm font-santoshi text-white rounded-md transition-all duration-300 ease-in-out hover:bg-gray-600 hover:shadow-lg active:transform active:scale-95"
-          >
-            Resume
-          </button>
-            <Link href='#connect'>
+            <button
+              type="button"
+              className="px-10 py-2 bg-gray-500 md:text-md text-sm font-santoshi text-white rounded-md transition-all duration-300 ease-in-out hover:bg-gray-600 hover:shadow-lg active:transform active:scale-95"
+            >
+              Resume
+            </button>
+            <Link href="#connect">
               <button
-            type="button"
-            className="px-10 py-2 md:text-md text-sm bg-gray-500 font-santoshi text-white rounded-md transition-all duration-300 ease-in-out hover:bg-gray-600 hover:shadow-lg active:transform active:scale-95"
-          >
-            Contact
-          </button>
+                type="button"
+                className="px-10 py-2 md:text-md text-sm bg-gray-500 font-santoshi text-white rounded-md transition-all duration-300 ease-in-out hover:bg-gray-600 hover:shadow-lg active:transform active:scale-95"
+              >
+                Contact
+              </button>
             </Link>
           </div>
         </div>

@@ -61,7 +61,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className="sticky top-0 z-50 flex items-center justify-between px-[24px] font-oswald  backdrop-blur-md md:h-[106px] md:pl-[120px] md:pr-[110px] text-white"
+      className="sticky top-0 z-50 flex items-center justify-between px-[24px] font-oswald  backdrop-blur-md md:h-[106px] md:pl-[120px] md:pr-[110px] text-white py-4"
     >
       <Link href="/">
         <span className="my-[13px] uppercase h-[36px] text-[24px] font-semibold text-secondary-500 md:my-[30px] md:h-[47px] md:w-[70px] md:text-[32px]">

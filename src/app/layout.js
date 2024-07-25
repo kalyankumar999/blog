@@ -38,7 +38,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${oswald.variable} ${monteCarlo.variable} ${satoshi.variable} bg-white`}
       >
-        <div className="bubble-container"></div>
+        <div className="bubble-container">
+          {Array.from({ length: 10 }, (_, i) => (
+            <div key={i} className="bubble"></div>
+          ))}
+        </div>
         <Toaster position="top-center" richColors />
         <Navbar />
         {children}

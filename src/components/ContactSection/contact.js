@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   FacebookIcon,
@@ -7,20 +9,49 @@ import {
 } from "../../assets/social-icons";
 import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
+import { toast } from "sonner";
 
-const ContactSection = () => {
+export default function ContactSection() {
+  const handleShare = async () => {
+    const shareUrl = "https://kalyanblog.vercel.app/";
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: "Check out my blog",
+          url: shareUrl,
+        });
+        toast.success("Thanks for sharing!");
+      } catch (error) {
+        toast.error("Error sharing");
+      }
+    } else {
+      // Fallback to copying to clipboard
+      navigator.clipboard.writeText(shareUrl).then(
+        () => {
+          toast({
+            description: "Link copied to clipboard!",
+          });
+        },
+        (err) => {
+          console.error("Could not copy text: ", err);
+        }
+      );
+    }
+  };
+
   return (
     <section
       id="connect"
-      className="md:mx-[120px] px-[16px] md:px-0  pb-10 text-white "
+      className="md:mx-[120px] px-[16px] md:px-0 pb-10 text-white"
     >
-      <h3 className="uppercase font-oswald font-semibold  md:text-xl text-lg md:mb-5 mb-3">
+      <h3 className="uppercase font-oswald font-semibold md:text-xl text-lg md:mb-5 mb-3">
         Contact me
       </h3>
 
       <div className="flex w-full gap-10 md:flex-nowrap flex-wrap">
         <div className="">
-          <p className="font-satoshi  md:text-lg text-md  mb-3 md:mb-6">
+          <p className="font-satoshi md:text-lg text-md mb-3 md:mb-6">
             Feel free to reach out to me for any inquiries, collaboration
             opportunities, or just to say hello! I'm available via email and
             phone, and you can also connect with me on LinkedIn for professional
@@ -52,31 +83,23 @@ const ContactSection = () => {
       <div className="flex justify-center mt-8 gap-4">
         <Link
           target="_blank"
-          href={"https://www.linkedin.com/in/kalyan-kumar-avula-765554223/"}
+          href="https://www.instagram.com/crazy_guy_kalyan?utm_source=qr&igsh=MXRucnV4NmN3NHdrbg=="
         >
           <InstagramIcon />
         </Link>
-        <Link
-          target="_blank"
-          href={"https://www.linkedin.com/in/kalyan-kumar-avula-765554223/"}
-        >
+        <Link target="_blank" href="https://www.facebook.com">
           <FacebookIcon />
         </Link>
         <Link
           target="_blank"
-          href={"https://www.linkedin.com/in/kalyan-kumar-avula-765554223/"}
+          href="https://www.linkedin.com/in/kalyan-kumar-avula-765554223/"
         >
           <LinkedinIcon />
         </Link>
-        <Link
-          target="_blank"
-          href={"https://www.linkedin.com/in/kalyan-kumar-avula-765554223/"}
-        >
+        <button onClick={handleShare} aria-label="Share">
           <ShareIcon />
-        </Link>
+        </button>
       </div>
     </section>
   );
-};
-
-export default ContactSection;
+}

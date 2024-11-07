@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profileImg from "../../assets/profile.jpg";
+import profileImg from "../../assets/profile.jpeg";
 import { aboutData } from "./data";
 import Link from "next/link";
 
@@ -15,11 +15,11 @@ const AboutSection = () => {
       </h3>
 
       <div className="custom-about-styles flex md:flex-row flex-col gap-2  text-black bg-white md:p-10 p-5 rounded-lg">
-        <div className="custom-about-image w-full">
+        <div className="custom-about-image w-full ">
           <Image
             src={profileImg}
             alt="profile image"
-            className="rounded-lg object-cover w-full "
+            className="rounded-lg object-cover w-full max-h-[450px]"
           />
         </div>
         <div className=" custom-about-info md:pl-4 flex justify-between flex-col">

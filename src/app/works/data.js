@@ -82,4 +82,43 @@ export const projectData = [
     ],
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
+  {
+    id: 4,
+    title: "Event Management and Profile Building",
+    position: "Frontend Developer",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Appwrite",
+      "Razorpay",
+    ],
+    summary:
+      "A specialized platform designed for artists such as dancers, singers, and performers to manage events and showcase their profiles. It bridges the gap between performers and event organizers by offering an intuitive and feature-rich interface.",
+
+    objectives:
+      "Provide a streamlined platform for artists to manage their professional profiles and events efficiently, fostering better visibility and career growth.",
+
+    features: [
+      "Profile creation and customization for artists",
+      "Event scheduling and management",
+      "Real-time notifications for bookings and inquiries",
+      "Performance analytics and insights",
+      "Integration with Appwrite for authentication and data management",
+      "WhatsApp and email communication for booking confirmations and updates",
+      "Razorpay integration for secure payment processing",
+    ],
+
+    contributions: [
+      "Developed the frontend interface using Next.js and TypeScript.",
+      "Designed and implemented responsive UI components with Tailwind CSS.",
+      "Integrated Appwrite for secure authentication and real-time data synchronization.",
+      "Implemented Razorpay for secure and seamless payment processing for bookings.",
+      "Built WhatsApp and email communication workflows for user notifications.",
+      "Collaborated with designers and backend developers to deliver a cohesive product.",
+      "Ensured smooth user experience with extensive testing and debugging.",
+    ],
+
+    liveDemoUrl: "URL_TO_LIVE_DEMO",
+  },
 ];

@@ -50,7 +50,7 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="flex flex-wrap md:flex-nowrap mt-4 justify-center gap-5 items-center bottom-0">
-            <a href="/kalyan-resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/kalyankumar-resume.pdf" target="_blank" rel="noopener noreferrer">
               <button
                 type="button"
                 className="px-10 py-2 bg-gray-500 md:text-md text-sm font-santoshi text-white rounded-md transition-all duration-300 ease-in-out hover:bg-gray-600 hover:shadow-lg active:transform active:scale-95"

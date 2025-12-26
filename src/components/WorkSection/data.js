@@ -32,9 +32,9 @@ export const workData = {
     },
     {
       id: 4,
-      title: "Event Management and Profile Building",
+      title: "Event Management & Profile Building",
       description:
-        "A specialized platform designed for artists such as dancers, singers, and performers to manage events and showcase their profiles.",
+        "A specialized platform designed for artists such as dancers and singers to manage events and showcase their profiles.",
 
       details:
         "Built a dynamic and user-friendly web application to cater to the needs of artists. The platform enables performers to create and manage their professional profiles, schedule events, and connect with event organizers. Features include real-time notifications, customizable portfolios, and performance analytics, ensuring artists can efficiently manage their careers and gain visibility.",

@@ -8,7 +8,7 @@ import Pic2 from "../../assets/pic2.jpeg";
 import Pic3 from "../../assets/pic3.jpeg";
 import Pic7 from "../../assets/pic7.jpeg";
 import Pic5 from "../../assets/pic5.jpeg";
-import Pic6 from "../../assets/pic6.jpeg";
+import Pic6 from "../../assets/kalyan.jpg";
 
 const GallerySection = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import profileImg from "../../assets/profile.jpeg";
+import profileImg from "../../assets/kalyan.jpg";
 import { aboutData } from "./data";
 import Link from "next/link";
 

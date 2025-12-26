@@ -24,7 +24,7 @@ const WorkSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4  ">
         {workData.projects.map((item) => (
           <Link href={`/works/${item.id}`} key={item.id}>
-            <div class=" bg-white text-primarytext-600 cursor-pointer  w-full h-48 rounded-lg p-5 hover:shadow-white hover:shadow-md">
+            <div class=" bg-white text-primarytext-600 cursor-pointer  w-full h-48 rounded-lg px-5 py-2 hover:shadow-white hover:shadow-md">
               
                 <span class="mb-2 text-2xl font-bold tracking-tight font-oswald ">
                   {item.title}

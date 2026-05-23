@@ -1,7 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import Reacts from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
-import { NextButton, PrevButton, usePrevNextButtons } from './embla-buttons';
 import Image from 'next/image';
 import AutoScroll from 'embla-carousel-auto-scroll';
 const EmblaCarousel = ({ skillData, options }) => {

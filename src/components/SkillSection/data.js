@@ -7,6 +7,8 @@ import TailwindcssLogo from "../../../public/logos/tailwindcss.svg";
 import NextjsLogo from "../../../public/logos/next-js.svg";
 import BootstrapLogo from "../../../public/logos/bootstrap-4.svg";
 import ReactLogo from "../../../public/logos/react-2.svg";
+import ZustandLogo from "../../../public/logos/zustand.svg";
+
 export const skillData = {
   description:
     "As a frontend developer, I specialize in creating intuitive and dynamic user interfaces. I have extensive experience with modern JavaScript frameworks like React.js and Next.js, ensuring efficient and scalable web applications. My proficiency in CSS frameworks such as Tailwind CSS allows me to build visually appealing and responsive designs.",
@@ -26,7 +28,7 @@ export const skillData = {
     },
     {
       url: NextjsLogo,
-      text: "Nextjs",
+      text: "NextJs",
     },
     {
       url: TailwindcssLogo,
@@ -46,8 +48,8 @@ export const skillData = {
       text: "Typescript",
     },
     {
-      url: GraphqlLogo,
-      text: "Graphql",
+      url: ZustandLogo,
+      text: "Zustand",
     },
     {
       url: BootstrapLogo,

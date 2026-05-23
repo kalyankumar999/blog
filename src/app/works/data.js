@@ -1,6 +1,41 @@
 export const projectData = [
   {
     id: 1,
+    title: "Dealer Portal",
+    position: "Frontend Developer",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "React Query",
+      "Vitest",
+    ],
+    summary:
+      "A brokerage platform for managing dealer and customer finance workflows, including proposal creation and application journeys across DLP and non-DLP processes.",
+
+    objectives:
+      "Enable efficient management of finance proposals and brokerage workflows for dealers and customers.",
+
+    features: [
+      "Dealer and customer workflow management",
+      "Finance proposal creation and tracking",
+      "DLP and non-DLP process handling",
+      "Reusable UI component system",
+      "Unit testing for application stability",
+    ],
+
+    contributions: [
+      "Developed complex financial workflow pages using React and TypeScript.",
+      "Built and maintained reusable component architecture with branded theming.",
+      "Implemented state management using Zustand and data fetching with React Query.",
+      "Wrote unit tests using Vitest and React Testing Library.",
+    ],
+
+    liveDemoUrl: "URL_TO_LIVE_DEMO",
+  },
+  {
+    id: 2,
     title: "Recruitment App",
     position: "Frontend Lead and Developer",
     technologies: [
@@ -32,7 +67,7 @@ export const projectData = [
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
   {
-    id: 2,
+    id: 3,
     title: "Tourism App",
     position: "Team Developer",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Strapi"],
@@ -57,7 +92,7 @@ export const projectData = [
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
   {
-    id: 3,
+    id: 4,
     title: "Admin Panel",
     position: "Team Developer",
     technologies: ["React.js", "TypeScript", "AntD"],
@@ -83,7 +118,7 @@ export const projectData = [
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
   {
-    id: 4,
+    id: 5,
     title: "Event Management and Profile Building",
     position: "Frontend Developer",
     technologies: [

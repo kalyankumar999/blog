@@ -4,8 +4,17 @@ export const workData = {
 
   projects: [
     {
-      id: 1,
-      title: "Recruitment App",
+    id: 1,
+    title: "Brokerage Portal",
+    description:
+      "Brokerage portal for managing dealer and customer finance workflows, including proposals and application journeys across DLP and non-DLP processes",
+
+    details:
+      "Built a responsive web application for a brokerage system enabling dealers and customers to manage finance proposals, application processing, and workflow tracking across different loan processing flows. Focused on delivering a scalable, user-friendly, and responsive interface with real-time updates."
+    },
+    {
+      id: 2,
+      title: "Recruitment Portal",
       description:
         "A comprehensive platform for managing job postings and candidate applications.",
 
@@ -13,8 +22,8 @@ export const workData = {
         "Developed a user-friendly interface for recruiters to post job openings and track applications. Implemented features for candidate profiles, job search functionality, and application tracking using modern JavaScript frameworks.",
     },
     {
-      id: 2,
-      title: "Tourism App",
+      id: 3,
+      title: "Tourism Website",
       description:
         "An app that provides users with information about tourist attractions and local experiences.",
 
@@ -22,7 +31,7 @@ export const workData = {
         "Created an interactive application that offers detailed information on tourist attractions, local experiences, and travel tips. Utilized Next.js to ensure fast loading times and a seamless user experience.",
     },
     {
-      id: 3,
+      id: 4,
       title: "Admin Panel",
       description:
         "A web-based interface for managing various aspects of a business or organization.",
@@ -31,7 +40,7 @@ export const workData = {
         "Built a comprehensive admin panel that allows business owners to manage operations efficiently. The interface includes features for user management, data analysis, and real-time updates, ensuring smooth business workflows.",
     },
     {
-      id: 4,
+      id: 5,
       title: "Event Management & Profile Building",
       description:
         "A specialized platform designed for artists such as dancers and singers to manage events and showcase their profiles.",

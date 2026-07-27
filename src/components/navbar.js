@@ -127,7 +127,7 @@ useEffect(() => {
                   {/* Mobile Logo */}
                   <Link href="/" className="flex-shrink-0 group">
                     <div className="flex items-center gap-1.5">
-                      <div className="relative w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-lg flex items-center justify-center group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:scale-110">
+                      <div className="relative w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-full flex items-center justify-center group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:scale-110">
                         <span className="text-white font-bold text-xs font-oswald">K</span>
                       </div>
                     </div>
@@ -163,7 +163,7 @@ useEffect(() => {
           {pageUrl === routes.BASE && isOpen && (
             <div
               ref={menuRef}
-              className="md:hidden border-t border-cyan-400/20 bg-gradient-to-b from-cyan-500/5 to-purple-500/5 backdrop-blur-sm animate-fade-in-scale"
+              className="md:hidden border-t rounded-md border-cyan-400/20 bg-gradient-to-b from-cyan-500/5 to-purple-500/5 backdrop-blur-sm animate-fade-in-scale"
             >
               <div className="px-3 py-3 space-y-2 max-h-72 overflow-y-auto">
                 {navLinks.map((item) => {

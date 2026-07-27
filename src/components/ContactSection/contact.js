@@ -43,61 +43,69 @@ export default function ContactSection() {
   return (
     <section
       id="connect"
-      className="md:mx-[120px] px-[16px] md:px-0 pb-10 text-white"
+      className="md:mx-[120px] px-[16px] md:px-0 pb-10 animate-slide-in-up"
     >
-      <h3 className="uppercase font-oswald font-semibold md:text-xl text-lg md:mb-5 mb-3">
+      <h3 className="uppercase font-oswald font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 md:text-xl text-lg md:mb-5 mb-3 md:text-3xl">
         Contact me
       </h3>
 
       <div className="flex w-full gap-10 md:flex-nowrap flex-wrap">
-        <div className="">
-          <p className="font-satoshi md:text-lg text-md mb-3 md:mb-6">
+        <div className="glass-morphism rounded-2xl p-6 md:p-8 hover-lift flex-1">
+          <p className="font-satoshi md:text-lg text-md mb-6 text-gray-200 leading-relaxed">
             Feel free to reach out to me for any inquiries, collaboration
             opportunities, or just to say hello! I'm available via email and
             phone, and you can also connect with me on LinkedIn for professional
             networking. Looking forward to hearing from you!
           </p>
-          <div className="flex gap-2">
-            <Phone />
-            <a
-              href={`tel:${"+91 6304506343"}`}
-              className="hover:text-primary-600"
-            >
-              <b className="cursor-pointer hover:underline">+91 6304506343</b>
-            </a>
-          </div>
-          <div className="flex gap-2 mt-4">
-            <Mail />
-            <a
-              href={`mailto:${"avulakalyan2001@gmail.com"}`}
-              className="cursor-pointer hover:underline"
-            >
-              <b className="cursor-pointer hover:underline">
+          <div className="space-y-4">
+            <div className="flex gap-3 items-center">
+              <Phone className="text-cyan-400" size={24} />
+              <a
+                href={`tel:${"+91 6304506343"}`}
+                className="text-cyan-300 hover:text-purple-300 transition-colors font-medium cursor-pointer hover:underline"
+              >
+                +91 6304506343
+              </a>
+            </div>
+            <div className="flex gap-3 items-center">
+              <Mail className="text-pink-400" size={24} />
+              <a
+                href={`mailto:${"avulakalyan2001@gmail.com"}`}
+                className="text-pink-300 hover:text-cyan-300 transition-colors font-medium cursor-pointer hover:underline"
+              >
                 avulakalyan2001@gmail.com
-              </b>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center mt-8 gap-4">
+      <div className="flex justify-center mt-10 gap-6">
         <Link
           target="_blank"
           href="https://www.instagram.com/crazy_guy_kalyan?utm_source=qr&igsh=MXRucnV4NmN3NHdrbg=="
         >
-          <InstagramIcon />
+          <div className="glass-morphism-vibrant p-3 rounded-full hover-lift hover:animate-glow">
+            <InstagramIcon />
+          </div>
         </Link>
         <Link target="_blank" href="https://www.facebook.com">
-          <FacebookIcon />
+          <div className="glass-morphism-vibrant p-3 rounded-full hover-lift hover:animate-glow">
+            <FacebookIcon />
+          </div>
         </Link>
         <Link
           target="_blank"
           href="https://www.linkedin.com/in/kalyan-kumar-avula-765554223/"
         >
-          <LinkedinIcon />
+          <div className="glass-morphism-vibrant p-3 rounded-full hover-lift hover:animate-glow">
+            <LinkedinIcon />
+          </div>
         </Link>
         <button onClick={handleShare} aria-label="Share">
-          <ShareIcon />
+          <div className="glass-morphism-vibrant p-3 rounded-full hover-lift hover:animate-glow">
+            <ShareIcon />
+          </div>
         </button>
       </div>
     </section>

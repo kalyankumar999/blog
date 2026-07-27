@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${oswald.variable} ${monteCarlo.variable} ${satoshi.variable} bg-white`}
+        className={`${oswald.variable} ${monteCarlo.variable} ${satoshi.variable} bg-gray-900`}
       >
         <div className="bubble-container">
           {Array.from({ length: 10 }, (_, i) => (
@@ -45,7 +45,9 @@ export default function RootLayout({ children }) {
         </div>
         <Toaster position="top-center" richColors />
         <Navbar />
-        {children}
+        <main className="pt-20 md:pt-24">
+          {children}
+        </main>
       </body>
     </html>
   );

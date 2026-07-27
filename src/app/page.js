@@ -9,8 +9,7 @@ import GallerySection from "../components/GallerySection/gallery";
 
 const HomePage = () => {
   return (
-    <div>
-      
+    <div className="relative">
       <HeroSection />
       <AboutSection />
       <SkillSection />

@@ -10,32 +10,18 @@ const SkillSection = () => {
   return (
     <section
       id="skills"
-      className="md:mx-[120px] px-[16px] md:px-0 md:pt-[110px] pt-[62px]"
+      className="md:mx-[120px] px-[16px] md:px-0 md:pt-[110px] pt-[62px] animate-slide-in-up"
     >
-      <h3 className="uppercase font-oswald font-semibold text-white text-xl md:mb-5 mb-3">
+      <h3 className="uppercase font-oswald font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 text-xl md:mb-5 mb-3 md:text-3xl">
         My skills
       </h3>
 
-      <p className="font-satoshi text-white md:text-lg text-md mb-3 md:mb-6 max-w-[800px]">
+      <p className="font-satoshi text-gray-200 md:text-lg text-md mb-3 md:mb-6 max-w-[800px] leading-relaxed">
         {skillData.description}
       </p>
-      <div className=" text-black ">
+      <div className="glass-morphism rounded-2xl p-6 hover-lift">
         <EmblaCarousel skillData={skillData.skills} options={OPTIONS} />
       </div>
-      {/* <div className="flex flex-wrap md:gap-40 gap-10 justify-between">
-        {skillData.map((item) => (
-          <div className="flex flex-col items-center justify-center p-2 w-28 md:mb-[-50px] hover:transform hover:ease-in-out hover:scale-105 hover:bg-white hover:text-primarytext-500 text-white hover:backdrop-blur-md hover:rounded-lg">
-            <Image
-              src={item.url}
-              alt={item.text}
-              className="w-full h-auto mb-2 object-cover"
-            />
-            <p className="text-center text-sm font-medium  ">
-              {item.text}
-            </p>
-          </div>
-        ))}
-      </div> */}
     </section>
   );
 };

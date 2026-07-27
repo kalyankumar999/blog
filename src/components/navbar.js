@@ -130,7 +130,6 @@ useEffect(() => {
                       <div className="relative w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-lg flex items-center justify-center group-hover:shadow-lg group-hover:shadow-purple-500/50 transition-all duration-300 transform group-hover:scale-110">
                         <span className="text-white font-bold text-xs font-oswald">K</span>
                       </div>
-                      <span className="text-white font-bold text-xs font-oswald">Kalyan</span>
                     </div>
                   </Link>
 

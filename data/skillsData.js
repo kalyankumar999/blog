@@ -1,0 +1,71 @@
+export const skillsData = [
+  {
+    category: "Frontend Core",
+    items: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
+  },
+  {
+    category: "State Management",
+    items: ["Redux", "Zustand", "Context API", "React Query"],
+  },
+  {
+    category: "Styling & UI",
+    items: [
+      "Tailwind CSS",
+      "SCSS",
+      "Bootstrap",
+      "Shadcn/ui",
+      "Styled Components",
+      "Responsive Design",
+      "Custom Component Libraries",
+    ],
+  },
+  {
+    category: "Testing & API Integration",
+    items: [
+      "Vitest",
+      "React Testing Library",
+      "Unit Testing",
+      "REST APIs",
+      "GraphQL",
+      "Authentication",
+      "Error Handling",
+      "Google Maps",
+    ],
+  },
+  {
+    category: "Data Visualization & Tables",
+    items: ["Recharts", "Chart.js", "TanStack Table", "Dashboards", "Data Tables (Sorting, Filtering, Pagination)"],
+  },
+  {
+    category: "Architecture & Performance",
+    items: [
+      "Component-Based Architecture",
+      "Frontend System Design",
+      "Lazy Loading",
+      "Code Splitting",
+      "Web Vitals Optimization",
+      "Clean Code",
+      "Debugging",
+      "Code Review",
+    ],
+  },
+  {
+    category: "Tools & Practices",
+    items: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Jira",
+      "Docker",
+      "CI/CD",
+      "Swagger",
+      "Chrome DevTools",
+      "Figma",
+      "Agile/Scrum",
+      "Cross-Browser Compatibility",
+      "WCAG Accessibility",
+      "Node.js",
+      "Express.js",
+    ],
+  },
+];

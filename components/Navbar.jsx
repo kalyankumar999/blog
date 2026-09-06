@@ -55,7 +55,7 @@ const Navbar = () => {
           href="#contact"
           className="hidden rounded-full bg-orange px-5 py-2 text-sm font-medium text-black transition-transform duration-300 hover:scale-105 hover:bg-orange-light md:inline-block"
         >
-          Let's talk
+          Let&apos;s talk
         </a>
 
         <button
@@ -101,7 +101,7 @@ const Navbar = () => {
               onClick={() => setOpen(false)}
               className="mt-2 inline-block w-fit rounded-full bg-orange px-5 py-2 text-sm font-medium text-black"
             >
-              Let's talk
+              Let&apos;s talk
             </a>
             <a
               href={`mailto:${socialLinks.email}`}

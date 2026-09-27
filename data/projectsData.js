@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Dealer Portal",
-    position: "Frontend Developer",
+    position: "Frontend Engineer",
     technologies: [
       "React.js",
       "TypeScript",
@@ -34,124 +34,161 @@ export const projectsData = [
 
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
+
   {
     id: 2,
     title: "Recruitment App",
-    position: "Frontend Lead and Developer",
+    position: "Full Stack Developer",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "GraphQL",
-      "Vittest",
+      "Node.js",
+      "Express.js",
+      "Vitest",
     ],
     summary:
-      "Project deals with the recruitment and hiring process, focusing on creating job listings, managing candidates, and facilitating the hiring process. It caters to three types of users: recruiters, panelists, and candidates, each with specific roles and functionalities. The admin panel provides oversight and management capabilities.",
+      "A recruitment and hiring platform supporting recruiters, panelists, and candidates with job management, candidate tracking, interviews, evaluations, and administrative workflows.",
 
     objectives:
-      "Improve recruitment efficiency and candidate experience through a streamlined web application.",
+      "Improve recruitment efficiency and candidate experience through a streamlined full stack web application.",
+
     features: [
       "Job creation and management",
       "Candidate application tracking and management",
       "Interview scheduling and management",
       "Evaluation and feedback collection",
-      "Automated mailing functionality for notifications and updates",
+      "Automated email notifications",
+      "Role-based user workflows",
     ],
+
     contributions: [
-      "Lead frontend development using Next.js and TypeScript.",
-      "Implemented responsive UI with Tailwind CSS.",
-      "Integrated GraphQL for efficient data fetching.",
-      "Developed and maintained unit and integration tests using vitest.",
-      "Created reusable UI components and documented them using Storybook.",
+      "Led frontend development using Next.js and TypeScript.",
+      "Built responsive and reusable UI components with Tailwind CSS.",
+      "Integrated GraphQL APIs for efficient data fetching and mutations.",
+      "Developed backend APIs and services using Node.js and Express.js.",
+      "Developed and maintained unit and integration tests using Vitest.",
     ],
+
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
+
   {
     id: 3,
     title: "Tourism App",
-    position: "Team Developer",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Strapi"],
+    position: "Full Stack Developer",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Strapi",
+      "Node.js",
+      "Express.js",
+      "Google Maps",
+    ],
     summary:
-      "The project focuses on providing comprehensive tourism information and booking services. By using this app, users can discover various tourism destinations and explore local attractions, including food spots, events, and galleries. Integrated with Google Maps, the app offers interactive navigation for better user experience.",
+      "A tourism platform that helps users discover destinations, local attractions, food spots, events, galleries, and cultural experiences with interactive maps and booking capabilities.",
+
     objectives:
-      "Enhance travel planning and exploration experiences for users.",
+      "Enhance travel planning and exploration experiences through a centralized tourism platform.",
+
     features: [
-      "Destination discovery with integrated Google Maps",
-      "Options to book events",
-      "Discover local foods",
-      "Explore galleries and other attractions",
-      "Discover arts and culture",
+      "Destination discovery with Google Maps",
+      "Event booking",
+      "Local food discovery",
+      "Gallery and attraction exploration",
+      "Arts and culture discovery",
+      "Location-based experiences",
     ],
+
     contributions: [
-      "Developed and maintained the frontend using Next.js.",
-      "Created and reused UI components with Tailwind CSS.",
-      "Collaborated with backend developers to integrate Strapi and ensure seamless data flow.",
+      "Developed and maintained the frontend using Next.js and TypeScript.",
+      "Created reusable responsive UI components with Tailwind CSS.",
+      "Developed and integrated backend APIs and services using Node.js and Express.js.",
+      "Integrated Strapi APIs for content management and data delivery.",
       "Worked closely with the design team to implement pixel-perfect UI.",
-      "Participated in code reviews and team meetings to ensure code quality and collaboration.",
     ],
+
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
+
   {
     id: 4,
     title: "Admin Panel",
-    position: "Team Developer",
-    technologies: ["React.js", "TypeScript", "AntD"],
+    position: "Full Stack Developer",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "AntD",
+      "Node.js",
+      "Express.js",
+    ],
     summary:
-      "The Social Media Admin Panel is a comprehensive tool designed for efficiently managing user content, interactions, and platform analytics. It provides a centralized dashboard for moderators and administrators to oversee user activity, monitor trends, and maintain the integrity of the social media platform.",
+      "A social media administration platform for managing users, content, interactions, analytics, system configuration, and platform activity from a centralized dashboard.",
 
     objectives:
-      "Centralize administrative tasks and improve operational efficiency.",
+      "Centralize administrative operations and improve platform management efficiency.",
+
     features: [
       "User management",
       "Dashboard analytics",
       "System configuration",
-      "Easy-to-use interfaces for configuring system settings and preferences",
-      "Automated alerts and notifications for critical system events and user activities",
+      "Platform activity monitoring",
+      "Automated alerts and notifications",
+      "Administrative workflows",
     ],
+
     contributions: [
-      "Contributed to frontend development using React.js and TypeScript.",
-      "Implemented UI components with Ant Design (AntD).",
-      "Integrated APIs for backend data management.",
-      "Collaborated with cross-functional teams to align development efforts with business requirements and user needs",
-      "Conducted thorough testing and debugging to ensure high-quality code and optimal performance",
+      "Developed frontend features using React.js and TypeScript.",
+      "Implemented reusable UI components using Ant Design.",
+      "Developed and integrated backend APIs using Node.js and Express.js.",
+      "Integrated APIs for administrative data management and dashboard analytics.",
+      "Collaborated with cross-functional teams to deliver business requirements.",
+      "Conducted testing and debugging to ensure application reliability.",
     ],
+
     liveDemoUrl: "URL_TO_LIVE_DEMO",
   },
+
   {
     id: 5,
     title: "Event Management and Profile Building",
-    position: "Frontend Developer",
+    position: "Full Stack Developer",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Appwrite",
       "Razorpay",
+      "Node.js",
+      "Express.js",
     ],
     summary:
-      "A specialized platform designed for artists such as dancers, singers, and performers to manage events and showcase their profiles. It bridges the gap between performers and event organizers by offering an intuitive and feature-rich interface.",
+      "A platform for artists such as dancers, singers, and performers to build professional profiles, manage events, receive bookings, and communicate with event organizers.",
 
     objectives:
-      "Provide a streamlined platform for artists to manage their professional profiles and events efficiently, fostering better visibility and career growth.",
+      "Provide artists with a streamlined platform to manage their professional profiles, events, bookings, and payments.",
 
     features: [
-      "Profile creation and customization for artists",
+      "Artist profile creation and customization",
       "Event scheduling and management",
-      "Real-time notifications for bookings and inquiries",
-      "Performance analytics and insights",
-      "Integration with Appwrite for authentication and data management",
-      "WhatsApp and email communication for booking confirmations and updates",
-      "Razorpay integration for secure payment processing",
+      "Booking and inquiry management",
+      "Real-time notifications",
+      "Performance analytics",
+      "Secure authentication",
+      "Razorpay payment integration",
+      "WhatsApp and email notifications",
     ],
 
     contributions: [
-      "Developed the frontend interface using Next.js and TypeScript.",
-      "Designed and implemented responsive UI components with Tailwind CSS.",
-      "Integrated Appwrite for secure authentication and real-time data synchronization.",
-      "Implemented Razorpay for secure and seamless payment processing for bookings.",
-      "Built WhatsApp and email communication workflows for user notifications.",
+      "Developed the frontend using Next.js and TypeScript.",
+      "Designed responsive UI components using Tailwind CSS.",
+      "Developed and integrated backend APIs using Node.js and Express.js.",
+      "Integrated Appwrite for authentication and real-time data synchronization.",
+      "Implemented Razorpay for secure payment processing.",
+      "Built WhatsApp and email notification workflows.",
       "Collaborated with designers and backend developers to deliver a cohesive product.",
-      "Ensured smooth user experience with extensive testing and debugging.",
     ],
 
     liveDemoUrl: "URL_TO_LIVE_DEMO",

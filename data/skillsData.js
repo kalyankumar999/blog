@@ -1,10 +1,18 @@
 export const skillsData = [
   {
-    category: "Frontend Core",
+    category: "Frontend",
     items: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
   },
   {
-    category: "State Management",
+    category: "Backend",
+    items: ["Node.js", "Express.js", "REST API Development", "Authentication", "Error Handling"],
+  },
+  {
+    category: "Databases",
+    items: ["MongoDB", "Mongoose (Basics)", "Basic Data Modeling", "CRUD Operations"],
+  },
+  {
+    category: "State Management & Data Fetching",
     items: ["Redux", "Zustand", "Context API", "React Query"],
   },
   {
@@ -27,9 +35,7 @@ export const skillsData = [
       "Unit Testing",
       "REST APIs",
       "GraphQL",
-      "Authentication",
-      "Error Handling",
-      "Google Maps",
+      "Google Maps API",
     ],
   },
   {
@@ -64,8 +70,6 @@ export const skillsData = [
       "Agile/Scrum",
       "Cross-Browser Compatibility",
       "WCAG Accessibility",
-      "Node.js",
-      "Express.js",
     ],
   },
 ];

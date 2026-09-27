@@ -28,19 +28,23 @@ const Hero = () => {
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-wider text-orange">
-            Frontend Engineer — Build Log
+            Full Stack Engineer — Crafting Web Experiences
           </p>
 
           <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] text-white sm:text-5xl md:text-6xl">
-            Interfaces built to hold up
+            Code that scales.
             <br />
-            under real traffic.
+            Interfaces that perform.
+            <br />
+            APIs that connect.
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-400 md:text-lg">
-            {personalData.name} designs and ships production React and Next.js
-            applications — from finance workflows to real-time dashboards — with
-            an eye on performance, testing, and maintainable architecture.
+            {personalData.name} develops modern full stack applications by
+            combining intuitive frontend experiences with robust backend
+            services. Experienced in building production-ready React and Next.js
+            applications, REST APIs with Node.js and Express.js, and data-driven
+            applications powered by MongoDB.
           </p>
 
           {/* Title block */}

@@ -1,14 +1,14 @@
 export const personalData = {
   name: "Kalyan Kumar Avula",
-  role: "Frontend Developer",
-  stackLine: "React.js · Next.js · TypeScript · Tailwind CSS",
+  role: "Full Stack Developer",
+  stackLine: "React.js · Next.js · TypeScript · Node.js · Express.js · MongoDB",
   location: "Bangalore, India",
   yearsExperience: "3+",
   status: "Open to new roles",
   profileImage: "/kalyan-pic.png",
 
   summary:
-    "Frontend Developer with 3 years of experience designing and building responsive, high-performance web applications using React.js, Next.js, and TypeScript. Proven track record of improving application load times through performance optimization, delivering scalable and maintainable UI architecture, and collaborating directly with clients and cross-functional teams in Agile environments. Strong focus on component reusability, state management, testing, and accessibility.",
+    "Full Stack Developer with 3+ years of experience building responsive, high-performance web applications using React.js, Next.js, and TypeScript, with hands-on backend development in Node.js, Express.js, and MongoDB. Proven track record of improving application load times through performance optimization, delivering scalable and maintainable UI and API architecture, and collaborating directly with clients and cross-functional teams in Agile environments. Strong focus on component reusability, RESTful API design, state management, testing, and accessibility.",
   resumeUrl: "/resume.pdf",
 };
 
